@@ -10,18 +10,14 @@
 
 int main(void)
 {
-	int digit = 48; // 48; decimal representation of 0
+	char base16[17] = "0123456789abcdef";
 
-    while (digit <= 102) // 102; decimal representation of f
-    {
-        putchar(digit);
+	int i;
 
-        /* After 9, we jump to 96; ' */
-        if (digit == 57)
-            digit += 39;
-	digit++;
-    }
+	for (i = 0; i < 16; i++)
+	{
+		putchar(base16[i]);
+	}
 	putchar('\n');
-
-	return (0);
+	return (0);
 }
