@@ -1,24 +1,21 @@
 #include "main.h"
 
 /**
- * print_most_numbers - function that checks and prints for a digi
-t (0 through 9)
+ * print_most_numbers - print numbers from 9 to 0
+ * except 2 and 4
  *
- * Return: Always 0.
- */
+ * Return: void
+*/
 void print_most_numbers(void)
-{       
-        int c;
+{
+	int i;
 
-	for (c = 48; c < 58; c++)
-	{       
-	if (c != 50)
-	}
-	if (c != 52)
+	for (i = 48; i <= 57; i++)
 	{
-		_putchar(c);
+		if (i != 50 && i != 52)
+		{
+			_putchar(i);
+		}
 	}
-	}
-	}
-	_putchar("\n");
+	_putchar('\n');
 }
