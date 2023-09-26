@@ -1,25 +1,25 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * print_diagsums - a function that prints the chessboard.
- * @a: pointer to start of matrix
- * @size: width of matrix column
- *
- * Return: void
+ * print_chessboard - the Funtion that prints the chessboard.
+ * @a: prototype char str
+ * Return: Always 0.
  */
-void print_diagsums(int *a, int size)
+void print_chessboard(char (*a)[8])
 {
-	int i, j, p, l = 0, r = 0;
+	int x, b;
 
-	for (i = 0; i < size; i++)
+	x = 0;
+	while (x < 8)
 	{
-		p = (i * size) + i;
-		l += *(a + p);
+		b = 0;
+		while (b < 8)
+		{
+			_putchar(a[x][b]);
+			b++;
+		}
+		_putchar('\n');
+		x++;
 	}
-	for (j = 0; j < size; j++)
-	{
-		p = (j * size) + (size - 1 - j);
-		r += *(a + p);
-	}
-	printf("%i, %i\n", l, r);
 }
