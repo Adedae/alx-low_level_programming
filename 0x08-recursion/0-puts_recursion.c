@@ -1,10 +1,11 @@
 #include <stdio.h>
+
 /**
  * _puts_recursion(char *s) - a function that prints a string
- * 0s: string to print 
+ * 0s: string to print
  */
 
-void _puts_recurion(char *s)
+void _puts_recursion(char *s)
 {
 	if (*s != '\0')
 	{
